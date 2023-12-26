@@ -15,6 +15,17 @@
 <body>
     <div class="title">
         <h1>משחק זיכרון</h1>
+        <div id="game-settings" dir="rtl">
+            <label for="cardCount"><h2>מספר קלפים במשחק</h2></label>
+            <select id="cardCount">
+              <option value="2">4 </option>
+              <option value="3">6 </option>
+              <option value="4">8 </option>
+              <option value="5" selected>10 </option>
+            </select>
+            <br>
+          </div>
+          <div><button id="startButton" class="startButton">התחל משחק</button></div>
     </div>
 
     <div id="myModal" class="modal">
@@ -24,7 +35,8 @@
         </div>
     </div>
 
-    <div class="menu">
+    <div  id="menu" class="menu">
+
         <h2>מספר מהלכים: <span class="liveCount">0</span></h2>
         <br>
         <h2 id="timer"> זמן: 0:00</h2>

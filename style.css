@@ -5,8 +5,7 @@
 }
 
 body {
-    width: 100vw;
-    min-height: 100vh;
+    width: 99.54vw;
     direction: ltr;
     display: flex;
     flex-direction: column;
@@ -30,22 +29,41 @@ body {
     perspective: 800px;
 }
 
+.title {
+    display: inline-grid;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+
+#game-settings select {
+    font-size: 16px;
+    padding: 5px;
+}
+
 .board {
-    max-height: 95vh;
-    min-height: 85vh;
+    max-height: 100vh;
+    min-height: 76.5vh;
     padding-inline: 10%;
     padding-top: 30px;
 }
 
 .menu {
+    display: none;
     width: 100vw;
     flex-direction: row-reverse;
 }
 
+.startButton {
+    background-color: aquamarine;
+    font-size: 30px;
+}
+
 .card {
-    width: 180px;
+    width: 140px;
     aspect-ratio: 3/4;
-    margin: 10px;
+    margin: 5px;
     align-items: center;
     border: 2px solid rgba(0, 0, 0, 0.4);
     border-radius: 15px;
@@ -113,6 +131,10 @@ button:hover {
     color: white;
 }
 
+h1 {
+    display: block;
+}
+
 h2 {
 
     display: inline-block;
@@ -135,7 +157,7 @@ h2 {
     align-items: center;
     align-self: center;
     width: fit-content;
-    height: 100% ;
+    height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
 }
@@ -163,6 +185,7 @@ h2 {
     text-decoration: none;
     cursor: pointer;
 }
+
 #modal-message {
-    white-space: pre-line; 
-  }
+    white-space: pre-line;
+}
